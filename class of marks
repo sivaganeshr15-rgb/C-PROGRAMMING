@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int scoreclass, failedsub , failedsubmark;
+    
+    scanf("%d",&scoreclass);
+    scanf("%d",&failedsub);
+    scanf("%d",&failedsubmark);
+    
+    switch(scoreclass){
+        
+        case 1:
+        if(failedsub>3)
+        
+        printf("no grace :");
+        
+        else
+        printf("grace mark per sub%d",failedsubmark+5);
+        break;
+        
+        case 2:
+        if (failedsub>2)
+        printf("no grace");
+        
+        else
+        printf("grace mark per sub:%d",failedsubmark+4);
+        break;
+        
+        case 3:
+        if (failedsub>1)
+        printf("no grace");
+        
+        else
+        printf("grace mark per sub:%d",failedsubmark+3);
+        break;
+        
+        
+        default :
+        printf("invalid is your scoreclass");
+    }
+
+    return 0;
+}
