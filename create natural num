@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n; // Declare an integer variable 'n' to store the upper limit
+    int i; // Declare an integer variable 'i' for the loop counter
+
+    // Prompt the user to enter the value of N
+    printf("Enter the value of N to print natural numbers up to: ");
+    // Read the integer value entered by the user and store it in 'n'
+    scanf("%d", &n);
+
+ 
+    // Use a for loop to iterate from 1 to N (inclusive)
+    for (i = 1; i <= n; i++) {
+        // Print the current value of 'i' followed by a space
+        printf("%d ", i);
+    }
+
+    // Print a newline character for better formatting after the numbers
+    printf("\n");
+
+    return 0; // Indicate successful program execution
+}
