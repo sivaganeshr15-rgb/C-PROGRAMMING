@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <gmp.h>
+int main() {
+    long long num;
+    long long factorial = 1; // Use long long to handle larger factorials
+    int i = 1;
+
+    printf("Enter a non-negative integer: ");
+    scanf("%lld", &num);
+
+    if (num < 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+    } 
+    else if (num == 0) {
+            factorial = 1; // Factorial of 0 is 1
+    }
+    else{
+            do {
+                factorial *= i;
+                i++;
+            } while (i <= num);
+        
+        printf("The factorial of %d is %lld\n", num, factorial);
+    }
+
+    return 0;
+}
