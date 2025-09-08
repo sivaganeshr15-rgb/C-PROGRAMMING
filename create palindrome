@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main(){
+    
+    int original,num,rem;
+    int rev_num=0;
+    
+    printf("enter the positive num:");
+    scanf("%d",&num);
+    original=num;
+    while(num!=0){
+        rem=num%10;
+        rev_num=rev_num*10+rem;
+        num=num/10;
+        
+        
+    }
+    
+    if(original==rev_num){
+        printf("\npalindrome%d",original);
+    }
+    else{
+        printf("not palimdrome%d",original);
+        
+    }
+    return 0;
+}
+
+    
+    
+    
